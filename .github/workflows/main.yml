@@ -22,8 +22,9 @@ jobs:
     - name: Set postgres
       uses: harmon758/postgresql-action@v1
       with:
-        postgresql db: siscontabil
-        postgresql password: 1234
+        postgresql port: 5433
+        postgresql db: sfclient
+        postgresql password: 12345
 
     - name: Grant execute permission for gradlew
       run: chmod +x gradlew
@@ -46,8 +47,9 @@ jobs:
     - name: Set postgres
       uses: harmon758/postgresql-action@v1
       with:
-        postgresql db: siscontabil
-        postgresql password: 1234
+        postgresql port: 5433
+        postgresql db: sfclient
+        postgresql password: 12345
 
     - name: Grant execute permission for gradlew
       run: chmod +x gradlew
