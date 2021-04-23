@@ -7,7 +7,7 @@ plugins {
 
 group = 'com.example'
 version = '0.0.1-SNAPSHOT'
-sourceCompatibility = '1.8'
+sourceCompatibility = 1.8
 
 configurations {
 	compileOnly {
@@ -42,7 +42,7 @@ dependencies {
 	runtimeOnly 'org.postgresql:postgresql'
 	implementation 'com.h2database:h2:1.3.148'
 	implementation group: 'javax.validation', name: 'validation-api', version: '2.0.1.Final'
-//	implementation group: 'org.hibernate', name: 'hibernate-core', version: '5.4.30.Final'
+	implementation group: 'org.hibernate', name: 'hibernate-core', version: '5.4.30.Final'
 
 
 	//Dependências para uso do QueryDSL para criação de consultas SQL
