@@ -22,7 +22,6 @@ jobs:
     - name: Set postgres
       uses: harmon758/postgresql-action@v1
       with:
-        postgresql port: 5433
         postgresql db: sfclient
         postgresql password: 12345
 
@@ -47,7 +46,6 @@ jobs:
     - name: Set postgres
       uses: harmon758/postgresql-action@v1
       with:
-        postgresql port: 5433
         postgresql db: sfclient
         postgresql password: 12345
 
